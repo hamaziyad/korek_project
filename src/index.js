@@ -3,17 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Layout from './components/Layout'
 import Search from './pages/Search';
-import Upload from './pages/Upload';
-import History from './pages/History';
-
+import PDFManager from './pages/PDFManager';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index path='/' element={<Search />}/>
-          <Route path='/upload' element={<Upload />}/>
-          <Route path='/history' element={<History />}/>
+          <Route index  element={<Search />}/>
+          <Route path='/pdfManager' element={<PDFManager />}/>
           <Route />
         </Route>
       </Routes>
