@@ -193,20 +193,24 @@ body {
   gap: 10px;
   margin: 10px;
 }
+.pagination-pdf{
+  margin-top: 35px;
+}
 
 .pagination-button {
-  width: 40px; /* Set a fixed width */
-  height: 40px; /* Set a fixed height */
-  background-color: #3699ff !important; /* Blue background */
-  color: white; /* White text */
+  width: 40px; 
+  height: 40px; 
+  background-color: #3699ff !important; 
+  color: white; 
   border: none;
-  border-radius: 50%; /* Ensures a circular shape */
+  border-radius: 50%; 
   cursor: pointer;
-  font-size: 16px; /* Adjust text size */
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
+
 }
 
 .pagination-button:disabled {
@@ -218,3 +222,84 @@ body {
   font-weight: bold;
   color: #1e293b;
 }
+
+
+/* pdf manager page (start)*/
+
+.drop-pdf{
+  display: flex;
+  width:450px;
+  height: 50px;
+
+  border:2px #3699ff solid ;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+align-items: space-between;
+
+  color: #3699ff;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drop-pdf:hover {
+  transition: all 0.3s ease;
+  background-color: #3699ff;
+  color: #fff;
+  border:1.5px #3699ff solid ;
+}
+.drop-pdf h1{
+  padding-right: 50px;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+.history .pdfs{
+  background: rgb(238, 237, 237);
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:500px;
+  height: 500px;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.history .pdfs .result{
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:450px;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(to left,#3699ff 10%,  rgb(228, 228, 228) 20%); /* Gradient from red to blue */
+  border: 2px solid rgba(54, 153, 255, 0.8); /* Thin blue border */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history .pdfs .result .file-name{
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgb(32, 32, 32);
+}
+
+.history .pdfs .result .view{
+  font-size: 16px;
+  color: rgb(255, 254, 254);
+}
+
+
+.pdfs .result .view {
+  cursor:pointer;
+}
+
+
+/* pdf manager page (end)*/
