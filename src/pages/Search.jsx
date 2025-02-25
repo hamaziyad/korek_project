@@ -8,6 +8,7 @@ function Search() {
   const [openResult, setOpenResult] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const filesPerPage = 6; // Number of files per page
+  const totalPages = Math.ceil(files.length / filesPerPage);
 
   useEffect(() => {
     axios
@@ -61,7 +62,7 @@ function Search() {
             >
               {'<'}
             </button>
-            <span className="page-number">Page {currentPage}</span>
+            <span className="page-number">Page {currentPage} of {totalPages}</span>
             <button
               onClick={() => setCurrentPage(currentPage + 1)}
               disabled={indexOfLastFile >= files.length}
